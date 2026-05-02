@@ -1,0 +1,120 @@
+1
+00:00:00,000 --> 00:00:04,332
+Let us begin by looking at a right-angled triangle. This is
+
+2
+00:00:04,432 --> 00:00:10,268
+a three-four-five triangle, one of the most well-known examples in mathematics.
+
+3
+00:00:10,400 --> 00:00:14,200
+We can draw squares on each side of the triangle.
+
+4
+00:00:14,300 --> 00:00:17,862
+The blue square on side a, the green square on
+
+5
+00:00:17,962 --> 00:00:21,604
+side b, and the red square on the hypotenuse c.
+
+6
+00:00:21,800 --> 00:00:26,308
+The Pythagorean theorem states that a squared plus b squared
+
+7
+00:00:26,408 --> 00:00:30,378
+equals c squared. The area of the two smaller squares
+
+8
+00:00:30,478 --> 00:00:33,988
+together equals the area of the largest square.
+
+9
+00:00:36,266 --> 00:00:41,600
+Now let us prove this visually by counting areas. A three-by-three
+
+10
+00:00:41,700 --> 00:00:47,035
+square has nine unit cells. A four-by-four square has sixteen unit
+
+11
+00:00:47,135 --> 00:00:52,798
+cells. And the hypotenuse square, five-by-five, has twenty-five cells.
+
+12
+00:00:53,066 --> 00:00:55,797
+Let us now move the nine blue cells from
+
+13
+00:00:55,897 --> 00:00:59,830
+a-squared into the top-left corner of the c-squared grid.
+
+14
+00:01:00,066 --> 00:01:02,944
+Now we move the sixteen green cells from
+
+15
+00:01:03,044 --> 00:01:07,262
+b-squared into the remaining L-shaped region of c-squared.
+
+16
+00:01:07,533 --> 00:01:12,534
+All twenty-five cells fit perfectly! Nine plus sixteen equals
+
+17
+00:01:12,634 --> 00:01:18,137
+twenty-five. This proves a-squared plus b-squared equals c-squared.
+
+18
+00:01:20,333 --> 00:01:25,907
+Now let us prove this algebraically. We construct a large square whose
+
+19
+00:01:26,007 --> 00:01:30,609
+side length is a plus b. Inside this square, we place four
+
+20
+00:01:30,709 --> 00:01:36,121
+identical right triangles, each with sides a and b and hypotenuse c.
+
+21
+00:01:36,333 --> 00:01:39,940
+The area of the large square is a plus b, the
+
+22
+00:01:40,040 --> 00:01:45,212
+whole squared. This equals the area of the inner c-squared, plus
+
+23
+00:01:45,312 --> 00:01:49,001
+the four triangles, each of area one-half a b.
+
+24
+00:01:49,133 --> 00:01:54,308
+Expanding the left side, we get a squared plus two a b plus b
+
+25
+00:01:54,408 --> 00:01:59,929
+squared. And the right side simplifies to c squared plus two a b.
+
+26
+00:02:00,066 --> 00:02:03,791
+Now, let us strip off the four triangles from the
+
+27
+00:02:03,891 --> 00:02:07,694
+diagram. Watch as they slide away from the square.
+
+28
+00:02:07,800 --> 00:02:11,345
+Subtracting two a b from both sides, we are
+
+29
+00:02:11,445 --> 00:02:14,990
+left with a squared plus b squared equals c
+
+30
+00:02:15,090 --> 00:02:19,484
+squared. And that is the Pythagorean theorem, proved!
+

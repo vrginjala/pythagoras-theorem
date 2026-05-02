@@ -1,0 +1,132 @@
+1
+00:00:00,000 --> 00:00:06,227
+இந்த right-angled triangle ஐ பாருங்கள். இது ஒரு three-four-five
+
+2
+00:00:06,327 --> 00:00:11,852
+triangle, இது mathematics இல் மிகவும் famous ஆன example.
+
+3
+00:00:11,952 --> 00:00:18,581
+நாம் இந்த triangle ஓட ஒவ்வொரு side ல squares draw பண்ணலாம். Side a ல
+
+4
+00:00:18,681 --> 00:00:25,508
+blue square, side b ல green square, மற்றும் hypotenuse c ல red square.
+
+5
+00:00:25,656 --> 00:00:32,677
+Pythagorean theorem இன் படி, a-squared plus b-squared, c-squared
+
+6
+00:00:32,777 --> 00:00:37,907
+கு equal ஆகும். அதாவது, இரண்டு சின்ன squares ஓட
+
+7
+00:00:38,007 --> 00:00:42,692
+total area, பெரிய square ஓட area கு சமானம்.
+
+8
+00:00:44,792 --> 00:00:49,740
+இப்போது நாம் areas ஐ counting மூலம் prove பண்ணலாம். Three
+
+9
+00:00:49,840 --> 00:00:54,434
+into three square ல ஒன்பது unit cells இருக்கும். Four
+
+10
+00:00:54,534 --> 00:00:59,659
+into four square ல பதினாறு unit cells இருக்கும். Hypotenuse
+
+11
+00:00:59,759 --> 00:01:04,708
+square, five into five, ல இருபத்தி ஐந்து cells இருக்கும்.
+
+12
+00:01:04,992 --> 00:01:10,187
+இப்போது நாம் a-squared இல் இருந்து ஒன்பது blue cells ஐ
+
+13
+00:01:10,287 --> 00:01:15,188
+c-squared grid ஓட top-left corner கு move பண்ணலாம்.
+
+14
+00:01:15,392 --> 00:01:20,167
+இப்போது b-squared இல் இருந்து பதினாறு green cells
+
+15
+00:01:20,267 --> 00:01:24,148
+ஐ மீதி L-shaped region கு move பண்ணலாம்.
+
+16
+00:01:24,458 --> 00:01:30,743
+பாருங்கள், இருபத்தி ஐந்து cells எல்லாம் perfectly fit ஆகிடுச்சு!
+
+17
+00:01:30,843 --> 00:01:36,131
+ஒன்பது plus பதினாறு சமம் இருபத்தி ஐந்து. இது a-squared
+
+18
+00:01:36,231 --> 00:01:41,518
+plus b-squared equals c-squared என்று prove செய்கிறது.
+
+19
+00:01:43,658 --> 00:01:48,775
+இப்போது நாம் இதை algebra மூலம் prove பண்ணலாம். நாம் ஒரு
+
+20
+00:01:48,875 --> 00:01:54,182
+பெரிய square construct பண்ணுவோம், அதன் side length a plus
+
+21
+00:01:54,282 --> 00:01:59,588
+b. இந்த square கு உள்ளே, நான்கு identical right triangles
+
+22
+00:01:59,688 --> 00:02:05,374
+place பண்ணுவோம், ஒவ்வொன்றின் sides a மற்றும் b, hypotenuse c.
+
+23
+00:02:05,474 --> 00:02:09,932
+பெரிய square ஓட area, a plus b whole squared.
+
+24
+00:02:10,032 --> 00:02:15,705
+இது inner c-squared area கும், நான்கு triangles area கும்
+
+25
+00:02:15,805 --> 00:02:20,566
+equal, ஒவ்வொரு triangle area half into a into b.
+
+26
+00:02:20,666 --> 00:02:25,760
+Left side ஐ expand செய்யும்போது, a-squared plus
+
+27
+00:02:25,860 --> 00:02:31,175
+two-a-b plus b-squared வரும். Right side simplify
+
+28
+00:02:31,275 --> 00:02:35,926
+செய்யும்போது, c-squared plus two-a-b வரும்.
+
+29
+00:02:36,026 --> 00:02:40,407
+இப்போது பாருங்கள், நான்கு triangles ஐ diagram இல்
+
+30
+00:02:40,507 --> 00:02:44,614
+இருந்து எடுக்கிறோம். அவை வெளியே slide ஆகின்றன.
+
+31
+00:02:44,714 --> 00:02:48,761
+இரண்டு பக்கம் இல் இருந்து two-a-b subtract
+
+32
+00:02:48,861 --> 00:02:54,190
+செய்யும்போது, a-squared plus b-squared equals c-squared
+
+33
+00:02:54,290 --> 00:02:58,534
+வரும். அது தான் Pythagorean theorem! Proved!
+

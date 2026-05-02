@@ -1,0 +1,120 @@
+1
+00:00:00,000 --> 00:00:04,812
+Regardons ce triangle rectangle. C'est un triangle trois-quatre-cinq,
+
+2
+00:00:04,912 --> 00:00:08,444
+l'un des exemples les plus connus en mathématiques.
+
+3
+00:00:08,600 --> 00:00:13,173
+Nous allons dessiner des carrés sur chaque côté du triangle. Le
+
+4
+00:00:13,273 --> 00:00:16,585
+carré bleu sur le côté a, le carré vert sur le
+
+5
+00:00:16,685 --> 00:00:19,924
+côté b, et le carré rouge sur l'hypoténuse c.
+
+6
+00:00:20,200 --> 00:00:23,649
+Le théorème de Pythagore dit que a au carré plus b au
+
+7
+00:00:23,749 --> 00:00:27,064
+carré est égal à c au carré. La somme des aires des
+
+8
+00:00:27,164 --> 00:00:30,948
+deux petits carrés est égale à l'aire du plus grand carré.
+
+9
+00:00:33,133 --> 00:00:37,937
+Maintenant, prouvons-le visuellement en comptant les aires. Un carré
+
+10
+00:00:38,037 --> 00:00:41,398
+trois par trois a neuf cellules. Un carré quatre
+
+11
+00:00:41,498 --> 00:00:44,499
+par quatre a seize cellules. Et le carré de
+
+12
+00:00:44,599 --> 00:00:48,177
+l'hypoténuse, cinq par cinq, a vingt-cinq cellules.
+
+13
+00:00:48,400 --> 00:00:51,575
+Déplaçons les neuf cellules bleues de a-carré vers
+
+14
+00:00:51,675 --> 00:00:54,588
+le coin supérieur gauche de la grille c-carré.
+
+15
+00:00:54,800 --> 00:00:59,207
+Maintenant, déplaçons les seize cellules vertes de b-carré dans
+
+16
+00:00:59,307 --> 00:01:02,356
+la région en forme de L restante de c-carré.
+
+17
+00:01:02,533 --> 00:01:08,308
+Les vingt-cinq cellules s'emboîtent parfaitement! Neuf plus seize font vingt-cinq.
+
+18
+00:01:08,408 --> 00:01:12,321
+Cela prouve que a-carré plus b-carré est égal à c-carré.
+
+19
+00:01:14,533 --> 00:01:19,928
+Prouvons-le maintenant par l'algèbre. Nous construisons un grand carré de côté
+
+20
+00:01:20,028 --> 00:01:25,353
+a plus b. À l'intérieur, nous plaçons quatre triangles rectangles identiques,
+
+21
+00:01:25,453 --> 00:01:28,665
+chacun avec les côtés a et b et l'hypoténuse c.
+
+22
+00:01:28,933 --> 00:01:31,821
+L'aire du grand carré est a plus b au carré.
+
+23
+00:01:31,921 --> 00:01:35,625
+Elle est égale à l'aire du carré intérieur c-carré, plus
+
+24
+00:01:35,725 --> 00:01:39,225
+les quatre triangles, chacun d'aire un demi a fois b.
+
+25
+00:01:39,333 --> 00:01:44,597
+En développant le côté gauche, nous obtenons a-carré plus deux-a-b plus
+
+26
+00:01:44,697 --> 00:01:49,433
+b-carré. Et le côté droit se simplifie en c-carré plus deux-a-b.
+
+27
+00:01:49,533 --> 00:01:52,530
+Maintenant, retirons les quatre triangles du
+
+28
+00:01:52,630 --> 00:01:55,769
+diagramme. Regardez-les glisser hors du carré.
+
+29
+00:01:55,933 --> 00:02:00,431
+En soustrayant deux-a-b des deux côtés, il reste a-carré plus
+
+30
+00:02:00,531 --> 00:02:05,481
+b-carré égale c-carré. Et voilà le théorème de Pythagore, démontré!
+
