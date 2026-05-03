@@ -1,0 +1,132 @@
+1
+00:00:00,000 --> 00:00:06,040
+Observemos este triángulo rectángulo. Es un triángulo tres-cuatro-cinco,
+
+2
+00:00:06,140 --> 00:00:10,220
+uno de los ejemplos más conocidos en matemáticas.
+
+3
+00:00:10,333 --> 00:00:15,693
+Podemos dibujar cuadrados sobre cada lado del triángulo. El cuadrado
+
+4
+00:00:15,793 --> 00:00:19,547
+azul sobre el lado a, el cuadrado verde sobre el
+
+5
+00:00:19,647 --> 00:00:23,481
+lado b, y el cuadrado rojo sobre la hipotenusa c.
+
+6
+00:00:23,733 --> 00:00:28,160
+El teorema de Pitágoras establece que a al cuadrado más b al
+
+7
+00:00:28,260 --> 00:00:32,309
+cuadrado es igual a c al cuadrado. La suma de las áreas
+
+8
+00:00:32,409 --> 00:00:37,289
+de los dos cuadrados pequeños es igual al área del cuadrado mayor.
+
+9
+00:00:39,533 --> 00:00:44,927
+Ahora demostrémoslo visualmente contando áreas. Un cuadrado de tres
+
+10
+00:00:45,027 --> 00:00:49,027
+por tres tiene nueve celdas. Un cuadrado de cuatro
+
+11
+00:00:49,127 --> 00:00:53,209
+por cuatro tiene dieciséis celdas. Y el cuadrado de
+
+12
+00:00:53,309 --> 00:00:58,129
+la hipotenusa, de cinco por cinco, tiene veinticinco celdas.
+
+13
+00:00:58,466 --> 00:01:02,827
+Movamos ahora las nueve celdas azules de a-cuadrado hacia
+
+14
+00:01:02,927 --> 00:01:07,366
+la esquina superior izquierda de la cuadrícula c-cuadrado.
+
+15
+00:01:07,466 --> 00:01:12,409
+Ahora movemos las dieciséis celdas verdes de b-cuadrado hacia
+
+16
+00:01:12,509 --> 00:01:16,294
+la región en forma de L restante de c-cuadrado.
+
+17
+00:01:16,533 --> 00:01:22,387
+¡Las veinticinco celdas encajan perfectamente! Nueve más dieciséis son
+
+18
+00:01:22,487 --> 00:01:26,725
+veinticinco. Esto demuestra que a al cuadrado más b
+
+19
+00:01:26,825 --> 00:01:29,873
+al cuadrado es igual a c al cuadrado.
+
+20
+00:01:32,000 --> 00:01:39,087
+Demostrémoslo ahora algebraicamente. Construimos un cuadrado grande cuyo lado mide a
+
+21
+00:01:39,187 --> 00:01:46,018
+más b. Dentro de este cuadrado colocamos cuatro triángulos rectángulos idénticos,
+
+22
+00:01:46,118 --> 00:01:49,612
+cada uno con catetos a y b e hipotenusa c.
+
+23
+00:01:49,866 --> 00:01:54,353
+El área del cuadrado grande es a más b, al cuadrado. Esto
+
+24
+00:01:54,453 --> 00:02:00,469
+es igual al área del cuadrado interior c-cuadrado más los cuatro triángulos,
+
+25
+00:02:00,569 --> 00:02:03,446
+cada uno de área un medio de a por b.
+
+26
+00:02:03,600 --> 00:02:08,120
+Expandiendo el lado izquierdo obtenemos a al cuadrado más
+
+27
+00:02:08,220 --> 00:02:11,687
+dos-a-b más b al cuadrado. Y el lado derecho
+
+28
+00:02:11,787 --> 00:02:15,092
+se simplifica a c al cuadrado más dos-a-b.
+
+29
+00:02:15,200 --> 00:02:18,276
+Ahora retiremos los cuatro triángulos del
+
+30
+00:02:18,376 --> 00:02:22,228
+diagrama. Obsérvelos deslizarse fuera del cuadrado.
+
+31
+00:02:22,333 --> 00:02:26,268
+Restando dos-a-b de ambos lados, nos queda a al
+
+32
+00:02:26,368 --> 00:02:29,617
+cuadrado más b al cuadrado igual a c al
+
+33
+00:02:29,717 --> 00:02:34,425
+cuadrado. ¡Y eso es el teorema de Pitágoras, demostrado!
+
