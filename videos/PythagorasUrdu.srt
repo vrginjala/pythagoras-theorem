@@ -1,0 +1,112 @@
+1
+00:00:00,000 --> 00:00:06,289
+اس right-angled triangle کو دیکھیں۔ یہ ایک three-four-five triangle
+
+2
+00:00:06,389 --> 00:00:10,676
+ہے، جو mathematics میں سب سے مشہور example ہے۔
+
+3
+00:00:10,800 --> 00:00:16,268
+ہم اس triangle کے ہر side پر squares draw کریں گے۔ Side a پر
+
+4
+00:00:16,368 --> 00:00:22,580
+blue square، side b پر green square، اور hypotenuse c پر red square۔
+
+5
+00:00:22,800 --> 00:00:29,487
+Pythagorean theorem کہتا ہے کہ a-squared plus b-squared، c-squared کے
+
+6
+00:00:29,587 --> 00:00:34,307
+برابر ہوتا ہے۔ دو چھوٹے squares کا total area، سب
+
+7
+00:00:34,407 --> 00:00:37,652
+سے بڑے square کے area کے برابر ہے۔
+
+8
+00:00:39,933 --> 00:00:45,448
+اب ہم areas count کرکے prove کریں گے۔ تین into تین square
+
+9
+00:00:45,548 --> 00:00:50,964
+میں نو unit cells ہیں۔ چار into چار square میں سولہ unit
+
+10
+00:00:51,064 --> 00:00:57,761
+cells ہیں۔ اور hypotenuse square، پانچ into پانچ، میں پچیس cells ہیں۔
+
+11
+00:00:58,000 --> 00:01:01,968
+اب ہم a-squared کے نو blue cells کو c-squared
+
+12
+00:01:02,068 --> 00:01:05,676
+grid کے top-left corner میں move کریں گے۔
+
+13
+00:01:05,800 --> 00:01:09,420
+اب ہم b-squared کے سولہ green cells کو
+
+14
+00:01:09,520 --> 00:01:13,140
+باقی L-shaped region میں move کریں گے۔
+
+15
+00:01:13,266 --> 00:01:20,499
+دیکھیں، پچیس cells بالکل perfectly fit ہوگئے! نو plus سولہ برابر پچیس۔
+
+16
+00:01:20,599 --> 00:01:27,518
+یہ prove کرتا ہے کہ a-squared plus b-squared c-squared کے برابر ہے۔
+
+17
+00:01:29,666 --> 00:01:36,040
+اب ہم اسے algebra سے prove کریں گے۔ ہم ایک بڑا square بنائیں گے جس
+
+18
+00:01:36,140 --> 00:01:43,397
+کی side a plus b ہے۔ اس square کے اندر، چار identical right triangles place
+
+19
+00:01:43,497 --> 00:01:48,694
+کریں گے، ہر ایک کی sides a اور b، اور hypotenuse c ہے۔
+
+20
+00:01:48,866 --> 00:01:53,709
+بڑے square کا area ہے a plus b کا whole squared۔
+
+21
+00:01:53,809 --> 00:01:59,475
+یہ inner c-squared کے area plus چار triangles کے area کے
+
+22
+00:01:59,575 --> 00:02:04,006
+برابر ہے، ہر triangle کا area آدھا a into b۔
+
+23
+00:02:04,133 --> 00:02:11,540
+Left side کو expand کرنے پر، a-squared plus two-a-b plus b-squared ملتا
+
+24
+00:02:11,640 --> 00:02:18,625
+ہے۔ اور right side simplify ہوکر c-squared plus two-a-b بن جاتا ہے۔
+
+25
+00:02:18,733 --> 00:02:23,558
+اب دیکھیں، ہم چار triangles کو diagram سے ہٹا رہے ہیں۔
+
+26
+00:02:23,658 --> 00:02:27,753
+دیکھو کیسے وہ square سے باہر slide ہو رہے ہیں۔
+
+27
+00:02:27,866 --> 00:02:34,386
+دونوں طرف سے two-a-b subtract کرنے پر، a-squared plus b-squared
+
+28
+00:02:34,486 --> 00:02:41,110
+برابر c-squared ملتا ہے۔ اور یہی Pythagorean theorem ہے! Proved!
+
