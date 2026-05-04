@@ -1,132 +1,531 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pythagorean Theorem — Multilingual Lesson</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#0d0f17;--card:#171a26;--violet:hsl(263,70%,68%);--cyan:hsl(190,90%,50%);--grad:linear-gradient(135deg,var(--violet),var(--cyan));--txt:#f2f2f2;--txt2:#8a8fa0;--border:hsla(230,20%,40%,.2);--r:14px;--ease:cubic-bezier(.22,1,.36,1)}
-html{font-size:16px}
-body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--txt);min-height:100vh}
-header{display:flex;align-items:center;justify-content:space-between;padding:14px 28px;background:hsla(230,25%,7%,.85);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
-.logo{font-size:1.15rem;font-weight:700;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-h1{font-size:1.2rem;font-weight:700}
-.badge{padding:4px 12px;border-radius:99px;font-size:.7rem;font-weight:600;background:var(--grad);color:#fff;text-transform:uppercase;letter-spacing:.04em}
-main{max-width:960px;margin:0 auto;padding:28px 20px 50px}
-.card{background:var(--card);border:1px solid var(--border);border-radius:18px;overflow:hidden;box-shadow:0 4px 24px hsla(263,60%,30%,.1)}
-.lang-bar{display:flex;align-items:center;gap:12px;padding:12px 18px;background:hsla(230,20%,10%,.5);border-bottom:1px solid var(--border);flex-wrap:wrap}
-.lang-bar span{font-size:.78rem;color:var(--txt2);font-weight:500}
-.lang-btn{display:flex;align-items:center;gap:6px;padding:6px 14px;border:1px solid var(--border);border-radius:99px;background:0;color:var(--txt2);font-family:'Inter',sans-serif;font-size:.76rem;font-weight:500;cursor:pointer;transition:all .25s var(--ease)}
-.lang-btn:hover{border-color:var(--violet);color:var(--txt);background:hsla(263,70%,68%,.08)}
-.lang-btn.active{background:var(--grad);color:#fff;font-weight:600;border-color:var(--violet);box-shadow:0 2px 14px hsla(263,70%,68%,.3)}
-.vw{position:relative;width:100%;aspect-ratio:16/9;background:#000;cursor:pointer}
-video{width:100%;height:100%;display:block;object-fit:contain}
-.sub{position:absolute;bottom:64px;left:50%;transform:translateX(-50%);max-width:85%;text-align:center;font-size:.95rem;font-weight:500;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.9);background:hsla(0,0%,0%,.55);padding:5px 14px;border-radius:8px;pointer-events:none;opacity:0;transition:opacity .2s;z-index:3}
-.sub.vis{opacity:1}.sub:empty{opacity:0!important}
-.ctl{position:absolute;bottom:0;left:0;right:0;padding:0 12px 8px;background:linear-gradient(transparent,hsla(0,0%,0%,.85));opacity:0;transition:opacity .3s;z-index:6}
-.vw:hover .ctl,.vw.cv .ctl{opacity:1}
-.pb{position:relative;height:5px;border-radius:10px;background:hsla(0,0%,100%,.15);cursor:pointer;margin-bottom:6px;transition:height .15s}
-.pb:hover{height:8px}
-.pb .fill{position:absolute;top:0;left:0;height:100%;border-radius:10px;background:var(--grad);pointer-events:none}
-.cr{display:flex;align-items:center;justify-content:space-between}
-.cl,.crr{display:flex;align-items:center;gap:6px}
-.cb{display:flex;align-items:center;justify-content:center;background:0;border:0;color:hsla(0,0%,100%,.85);cursor:pointer;padding:5px;border-radius:8px;font-family:'JetBrains Mono',monospace;font-size:.76rem;font-weight:500;transition:all .2s}
-.cb:hover{background:hsla(0,0%,100%,.12);color:#fff}
-.cb.on{color:var(--cyan)}
-.td{font-family:'JetBrains Mono',monospace;font-size:.7rem;color:hsla(0,0%,100%,.55)}
-.vs{-webkit-appearance:none;appearance:none;width:60px;height:3px;border-radius:10px;background:hsla(0,0%,100%,.2);outline:0;cursor:pointer}
-.vs::-webkit-slider-thumb{-webkit-appearance:none;width:10px;height:10px;border-radius:50%;background:#fff}
-.bp{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:4;background:hsla(0,0,0,.3);transition:opacity .3s}
-.bp.h{opacity:0;pointer-events:none}
-.bp svg{filter:drop-shadow(0 4px 16px hsla(0,0%,0%,.5))}
-.ig{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin-top:24px}
-.ic{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:18px;transition:all .3s var(--ease)}
-.ic:hover{transform:translateY(-2px);border-color:hsla(263,70%,68%,.3);box-shadow:0 6px 24px hsla(263,60%,40%,.1)}
-.ic h3{font-size:.88rem;margin:6px 0 4px}.ic p{font-size:.78rem;color:var(--txt2);line-height:1.5}
-.tf{font-family:'JetBrains Mono',monospace;font-size:1.4rem!important;font-weight:700!important;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:6px!important}
-footer{text-align:center;padding:20px;font-size:.7rem;color:hsla(230,10%,40%,1);border-top:1px solid var(--border)}
-.toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%) translateY(16px);background:hsla(230,20%,14%,.7);backdrop-filter:blur(14px);border:1px solid hsla(263,70%,68%,.3);border-radius:var(--r);padding:10px 20px;font-size:.8rem;font-weight:500;color:var(--txt);z-index:200;opacity:0;pointer-events:none;transition:all .3s var(--ease)}
-.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
-@media(max-width:680px){header{flex-direction:column;gap:6px;padding:10px 14px}main{padding:14px 10px 36px}.lang-bar{flex-direction:column;align-items:flex-start;gap:8px}.sub{font-size:.78rem;bottom:54px}.ig{grid-template-columns:1fr 1fr;gap:10px}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pythagorean Theorem — Multilingual Lesson</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        :root {
+            --bg: #0d0f17;
+            --card: #171a26;
+            --violet: hsl(263, 70%, 68%);
+            --cyan: hsl(190, 90%, 50%);
+            --grad: linear-gradient(135deg, var(--violet), var(--cyan));
+            --txt: #f2f2f2;
+            --txt2: #8a8fa0;
+            --border: hsla(230, 20%, 40%, .2);
+            --r: 14px;
+            --ease: cubic-bezier(.22, 1, .36, 1)
+        }
+
+        html {
+            font-size: 16px
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--txt);
+            min-height: 100vh
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 28px;
+            background: hsla(230, 25%, 7%, .85);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100
+        }
+
+        .logo {
+            font-size: 1.15rem;
+            font-weight: 700;
+            background: var(--grad);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text
+        }
+
+        h1 {
+            font-size: 1.2rem;
+            font-weight: 700
+        }
+
+        .badge {
+            padding: 4px 12px;
+            border-radius: 99px;
+            font-size: .7rem;
+            font-weight: 600;
+            background: var(--grad);
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: .04em
+        }
+
+        main {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 28px 20px 50px
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 4px 24px hsla(263, 60%, 30%, .1)
+        }
+
+        .lang-bar {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 18px;
+            background: hsla(230, 20%, 10%, .5);
+            border-bottom: 1px solid var(--border);
+            flex-wrap: wrap
+        }
+
+        .lang-bar span {
+            font-size: .78rem;
+            color: var(--txt2);
+            font-weight: 500
+        }
+
+        .lang-btn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border: 1px solid var(--border);
+            border-radius: 99px;
+            background: 0;
+            color: var(--txt2);
+            font-family: 'Inter', sans-serif;
+            font-size: .76rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all .25s var(--ease)
+        }
+
+        .lang-btn:hover {
+            border-color: var(--violet);
+            color: var(--txt);
+            background: hsla(263, 70%, 68%, .08)
+        }
+
+        .lang-btn.active {
+            background: var(--grad);
+            color: #fff;
+            font-weight: 600;
+            border-color: var(--violet);
+            box-shadow: 0 2px 14px hsla(263, 70%, 68%, .3)
+        }
+
+        .vw {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: #000;
+            cursor: pointer
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: contain
+        }
+
+        .sub {
+            position: absolute;
+            bottom: 64px;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 85%;
+            text-align: center;
+            font-size: .95rem;
+            font-weight: 500;
+            color: #fff;
+            text-shadow: 0 1px 6px rgba(0, 0, 0, .9);
+            background: hsla(0, 0%, 0%, .55);
+            padding: 5px 14px;
+            border-radius: 8px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity .2s;
+            z-index: 3
+        }
+
+        .sub.vis {
+            opacity: 1
+        }
+
+        .sub:empty {
+            opacity: 0 !important
+        }
+
+        .ctl {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 0 12px 8px;
+            background: linear-gradient(transparent, hsla(0, 0%, 0%, .85));
+            opacity: 0;
+            transition: opacity .3s;
+            z-index: 6
+        }
+
+        .vw:hover .ctl,
+        .vw.cv .ctl {
+            opacity: 1
+        }
+
+        .pb {
+            position: relative;
+            height: 5px;
+            border-radius: 10px;
+            background: hsla(0, 0%, 100%, .15);
+            cursor: pointer;
+            margin-bottom: 6px;
+            transition: height .15s
+        }
+
+        .pb:hover {
+            height: 8px
+        }
+
+        .pb .fill {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            border-radius: 10px;
+            background: var(--grad);
+            pointer-events: none
+        }
+
+        .cr {
+            display: flex;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        .cl,
+        .crr {
+            display: flex;
+            align-items: center;
+            gap: 6px
+        }
+
+        .cb {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: 0;
+            border: 0;
+            color: hsla(0, 0%, 100%, .85);
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 8px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: .76rem;
+            font-weight: 500;
+            transition: all .2s
+        }
+
+        .cb:hover {
+            background: hsla(0, 0%, 100%, .12);
+            color: #fff
+        }
+
+        .cb.on {
+            color: var(--cyan)
+        }
+
+        .td {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: .7rem;
+            color: hsla(0, 0%, 100%, .55)
+        }
+
+        .vs {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 60px;
+            height: 3px;
+            border-radius: 10px;
+            background: hsla(0, 0%, 100%, .2);
+            outline: 0;
+            cursor: pointer
+        }
+
+        .vs::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #fff
+        }
+
+        .bp {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 4;
+            background: hsla(0, 0, 0, .3);
+            transition: opacity .3s
+        }
+
+        .bp.h {
+            opacity: 0;
+            pointer-events: none
+        }
+
+        .bp svg {
+            filter: drop-shadow(0 4px 16px hsla(0, 0%, 0%, .5))
+        }
+
+        .ig {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 14px;
+            margin-top: 24px
+        }
+
+        .ic {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--r);
+            padding: 18px;
+            transition: all .3s var(--ease)
+        }
+
+        .ic:hover {
+            transform: translateY(-2px);
+            border-color: hsla(263, 70%, 68%, .3);
+            box-shadow: 0 6px 24px hsla(263, 60%, 40%, .1)
+        }
+
+        .ic h3 {
+            font-size: .88rem;
+            margin: 6px 0 4px
+        }
+
+        .ic p {
+            font-size: .78rem;
+            color: var(--txt2);
+            line-height: 1.5
+        }
+
+        .tf {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.4rem !important;
+            font-weight: 700 !important;
+            background: var(--grad);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 6px !important
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: .7rem;
+            color: hsla(230, 10%, 40%, 1);
+            border-top: 1px solid var(--border)
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 28px;
+            left: 50%;
+            transform: translateX(-50%) translateY(16px);
+            background: hsla(230, 20%, 14%, .7);
+            backdrop-filter: blur(14px);
+            border: 1px solid hsla(263, 70%, 68%, .3);
+            border-radius: var(--r);
+            padding: 10px 20px;
+            font-size: .8rem;
+            font-weight: 500;
+            color: var(--txt);
+            z-index: 200;
+            opacity: 0;
+            pointer-events: none;
+            transition: all .3s var(--ease)
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0)
+        }
+
+        @media(max-width:680px) {
+            header {
+                flex-direction: column;
+                gap: 6px;
+                padding: 10px 14px
+            }
+
+            main {
+                padding: 14px 10px 36px
+            }
+
+            .lang-bar {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px
+            }
+
+            .sub {
+                font-size: .78rem;
+                bottom: 54px
+            }
+
+            .ig {
+                grid-template-columns: 1fr 1fr;
+                gap: 10px
+            }
+        }
+    </style>
 </head>
+
 <body>
-<header><span class="logo">MathVision</span><h1>Pythagorean Theorem</h1><span class="badge">Class IX</span></header>
-<main>
-<section class="card">
-<div class="lang-bar">
-<span>🌐 Audio Language</span>
-<button class="lang-btn active" data-lang="en">🇬🇧 English</button>
-<button class="lang-btn" data-lang="hi">🇮🇳 हिन्दी</button>
-<button class="lang-btn" data-lang="te">🇮🇳 తెలుగు</button>
-<button class="lang-btn" data-lang="ta">🇮🇳 தமிழ்</button>
-<button class="lang-btn" data-lang="fr">🇫🇷 Français</button>
-<button class="lang-btn" data-lang="ur">🇵🇰 اردو</button>
-<button class="lang-btn" data-lang="bn">🇧🇩 বাংলা</button>
-<button class="lang-btn" data-lang="es">🇪🇸 Español</button>
-</div>
-<div class="vw" id="vw">
-<video id="vid"></video>
-<div class="sub" id="sub"></div>
-<div class="ctl">
-<div class="pb" id="pb"><div class="fill" id="fill"></div></div>
-<div class="cr">
-<div class="cl">
-<button class="cb" id="pp" title="Play/Pause"><svg id="ipl" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><svg id="ipa" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg></button>
-<button class="cb" id="rp" title="Replay"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg></button>
-<button class="cb" id="mu" title="Mute"><svg id="iv" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg></button>
-<input type="range" class="vs" id="vol" min="0" max="1" step=".05" value="1">
-<span class="td" id="tm">0:00 / 0:00</span>
-</div>
-<div class="crr">
-<button class="cb on" id="cc" title="Subtitles">CC</button>
-<button class="cb" id="sp" title="Speed">1.25×</button>
-<button class="cb" id="fs" title="Fullscreen">⛶</button>
-</div>
-</div>
-</div>
-<div class="bp" id="bp"><svg width="64" height="64" viewBox="0 0 24 24" fill="rgba(255,255,255,.9)"><path d="M8 5v14l11-7z"/></svg></div>
-</div>
-</section>
-<section class="ig">
-<div class="ic"><div>📐</div><h3>The Theorem</h3><p class="tf">a² + b² = c²</p><p>The square of the hypotenuse equals the sum of squares of the other two sides.</p></div>
-<div class="ic"><div>🔲</div><h3>Visual Proof</h3><p>9 blue + 16 green cells fill the 25-cell hypotenuse square perfectly.</p></div>
-<div class="ic"><div>📝</div><h3>Algebraic Proof</h3><p>Four triangles inside (a+b)² reveal the identity through 2ab cancellation.</p></div>
-<div class="ic"><div>🌐</div><h3>5 Languages</h3><p>English, Hindi, Telugu, Tamil, French — each with matching subtitles.</p></div>
-</section>
-</main>
-<footer>MathVision · Class IX Mathematics · Pythagorean Theorem</footer>
-<script>
-(function(){
-const B='videos',L={en:{l:'English',v:B+'/PythagorasEnglish.mp4',s:B+'/PythagorasEnglish.srt'},hi:{l:'हिन्दी',v:B+'/PythagorasHindi.mp4',s:B+'/PythagorasHindi.srt'},te:{l:'తెలుగు',v:B+'/PythagorasTelugu.mp4',s:B+'/PythagorasTelugu.srt'},ta:{l:'தமிழ்',v:B+'/PythagorasTamil.mp4',s:B+'/PythagorasTamil.srt'},fr:{l:'Français',v:B+'/PythagorasFrench.mp4',s:B+'/PythagorasFrench.srt'},ur:{l:'اردو',v:B+'/PythagorasUrdu.mp4',s:B+'/PythagorasUrdu.srt'},bn:{l:'বাংলা',v:B+'/PythagorasBengali.mp4',s:B+'/PythagorasBengali.srt'},es:{l:'Español',v:B+'/PythagorasSpanish.mp4',s:B+'/PythagorasSpanish.srt'}};
-let cur='en',subs=[],subOn=true,drag=false,si=1;const SP=[1,1.25,1.5,2,.5,.75];
-const $=s=>document.querySelector(s),vid=$('#vid'),vw=$('#vw'),sub=$('#sub'),pp=$('#pp'),ipl=$('#ipl'),ipa=$('#ipa'),bp=$('#bp'),pb=$('#pb'),fill=$('#fill'),tm=$('#tm'),sp=$('#sp'),cc=$('#cc'),fs=$('#fs'),mu=$('#mu'),vol=$('#vol'),rp=$('#rp');
-const btns=document.querySelectorAll('.lang-btn');
-function parseSRT(t){const c=[];t.trim().replace(/\r\n/g,'\n').split(/\n\n+/).forEach(b=>{const l=b.split('\n');if(l.length<3)return;const m=l[1].match(/(\d{2}):(\d{2}):(\d{2}),(\d{3})\s*-->\s*(\d{2}):(\d{2}):(\d{2}),(\d{3})/);if(!m)return;c.push({start:+m[1]*3600+ +m[2]*60+ +m[3]+ +m[4]/1e3,end:+m[5]*3600+ +m[6]*60+ +m[7]+ +m[8]/1e3,text:l.slice(2).join(' ')})});return c}
-async function sw(lang){if(lang===cur&&vid.src)return;const was=!vid.paused,fr=vid.duration>0?vid.currentTime/vid.duration:0;cur=lang;btns.forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));vid.src=L[lang].v;vid.load();try{const r=await fetch(L[lang].s);subs=r.ok?parseSRT(await r.text()):[]}catch{subs=[]}await new Promise(r=>vid.addEventListener('loadedmetadata',r,{once:true}));if(fr>0&&vid.duration)vid.currentTime=fr*vid.duration;vid.playbackRate=SP[si];if(was)vid.play().catch(()=>{});toast('Audio: '+L[lang].l)}
-function tog(){vid.paused?vid.play().catch(()=>{}):vid.pause()}
-function upd(){const p=!vid.paused;ipl.style.display=p?'none':'block';ipa.style.display=p?'block':'none';bp.classList.toggle('h',p)}
-function fmt(s){if(!isFinite(s))return'0:00';const m=Math.floor(s/60),sc=Math.floor(s%60);return m+':'+(sc<10?'0':'')+sc}
-function prog(){if(!vid.duration)return;const p=vid.currentTime/vid.duration*100;fill.style.width=p+'%';tm.textContent=fmt(vid.currentTime)+' / '+fmt(vid.duration);if(!subOn||!subs.length){sub.textContent='';sub.classList.remove('vis');return}const t=vid.currentTime,c=subs.find(c=>t>=c.start&&t<=c.end);if(c){sub.textContent=c.text;sub.classList.add('vis')}else{sub.textContent='';sub.classList.remove('vis')}}
-let te=null;function toast(m){if(!te){te=document.createElement('div');te.className='toast';document.body.appendChild(te)}te.textContent=m;te.classList.add('show');setTimeout(()=>te.classList.remove('show'),2e3)}
-btns.forEach(b=>b.addEventListener('click',()=>sw(b.dataset.lang)));
-pp.addEventListener('click',tog);bp.addEventListener('click',tog);vid.addEventListener('click',tog);
-vid.addEventListener('play',upd);vid.addEventListener('pause',upd);vid.addEventListener('ended',upd);vid.addEventListener('timeupdate',prog);
-pb.addEventListener('mousedown',e=>{drag=true;const r=pb.getBoundingClientRect();vid.currentTime=Math.max(0,Math.min(1,(e.clientX-r.left)/r.width))*vid.duration});
-document.addEventListener('mousemove',e=>{if(!drag)return;const r=pb.getBoundingClientRect();vid.currentTime=Math.max(0,Math.min(1,(e.clientX-r.left)/r.width))*vid.duration});
-document.addEventListener('mouseup',()=>drag=false);
-rp.addEventListener('click',()=>{vid.currentTime=0;vid.play().catch(()=>{})});
-mu.addEventListener('click',()=>{vid.muted=!vid.muted});
-vol.addEventListener('input',()=>{vid.volume=parseFloat(vol.value);vid.muted=false});
-cc.addEventListener('click',()=>{subOn=!subOn;cc.classList.toggle('on',subOn);toast(subOn?'Subtitles ON':'Subtitles OFF')});
-sp.addEventListener('click',()=>{si=(si+1)%SP.length;vid.playbackRate=SP[si];sp.textContent=SP[si]+'×';toast('Speed: '+SP[si]+'×')});
-fs.addEventListener('click',()=>{document.fullscreenElement?document.exitFullscreen():vw.requestFullscreen?.()});
-let ct;vw.addEventListener('mousemove',()=>{vw.classList.add('cv');clearTimeout(ct);if(!vid.paused)ct=setTimeout(()=>vw.classList.remove('cv'),3e3)});
-document.addEventListener('keydown',e=>{const k=e.key;if(k===' '||k==='k'){e.preventDefault();tog()}else if(k==='ArrowRight')vid.currentTime=Math.min(vid.duration,vid.currentTime+5);else if(k==='ArrowLeft')vid.currentTime=Math.max(0,vid.currentTime-5);else if(k==='m')vid.muted=!vid.muted;else if(k==='f')(document.fullscreenElement?document.exitFullscreen():vw.requestFullscreen?.());else if(k==='c'){subOn=!subOn;cc.classList.toggle('on',subOn)}else{const i=['1','2','3','4','5'].indexOf(k);if(i>=0)sw(['en','hi','te','ta','fr'][i])}});
-sw('en');
-})();
-</script>
+    <header><span class="logo">MathVision</span>
+        <h1>Pythagorean Theorem</h1><span class="badge">Class IX</span>
+    </header>
+    <main>
+        <section class="card">
+            <div class="lang-bar">
+                <span>🌐 Audio Language</span>
+                <button class="lang-btn active" data-lang="en">English</button>
+                <button class="lang-btn" data-lang="hi">हिन्दी</button>
+                <button class="lang-btn" data-lang="te">తెలుగు</button>
+                <button class="lang-btn" data-lang="ta">தமிழ்</button>
+                <button class="lang-btn" data-lang="fr">Français</button>
+                <button class="lang-btn" data-lang="ur">اردو</button>
+                <button class="lang-btn" data-lang="bn">বাংলা</button>
+                <button class="lang-btn" data-lang="es">Español</button>
+            </div>
+            <div class="vw" id="vw">
+                <video id="vid" playsinline webkit-playsinline preload="metadata" x-webkit-airplay="allow"></video>
+                <div class="sub" id="sub"></div>
+                <div class="ctl">
+                    <div class="pb" id="pb">
+                        <div class="fill" id="fill"></div>
+                    </div>
+                    <div class="cr">
+                        <div class="cl">
+                            <button class="cb" id="pp" title="Play/Pause"><svg id="ipl" width="20" height="20"
+                                    viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg><svg id="ipa" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+                                    style="display:none">
+                                    <rect x="6" y="4" width="4" height="16" />
+                                    <rect x="14" y="4" width="4" height="16" />
+                                </svg></button>
+                            <button class="cb" id="rp" title="Replay"><svg width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="1 4 1 10 7 10" />
+                                    <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10" />
+                                </svg></button>
+                            <button class="cb" id="mu" title="Mute"><svg id="iv" width="18" height="18"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+                                </svg></button>
+                            <input type="range" class="vs" id="vol" min="0" max="1" step=".05" value="1">
+                            <span class="td" id="tm">0:00 / 0:00</span>
+                        </div>
+                        <div class="crr">
+                            <button class="cb on" id="cc" title="Subtitles">CC</button>
+                            <button class="cb" id="sp" title="Speed">1.25×</button>
+                            <button class="cb" id="fs" title="Fullscreen">⛶</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bp" id="bp"><svg width="64" height="64" viewBox="0 0 24 24" fill="rgba(255,255,255,.9)">
+                        <path d="M8 5v14l11-7z" />
+                    </svg></div>
+            </div>
+        </section>
+        <section class="ig">
+            <div class="ic">
+                <div>📐</div>
+                <h3>The Theorem</h3>
+                <p class="tf">a² + b² = c²</p>
+                <p>The square of the hypotenuse equals the sum of squares of the other two sides.</p>
+            </div>
+            <div class="ic">
+                <div>🔲</div>
+                <h3>Visual Proof</h3>
+                <p>9 blue + 16 green cells fill the 25-cell hypotenuse square perfectly.</p>
+            </div>
+            <div class="ic">
+                <div>📝</div>
+                <h3>Algebraic Proof</h3>
+                <p>Four triangles inside (a+b)² reveal the identity through 2ab cancellation.</p>
+            </div>
+            <div class="ic">
+                <div>🌐</div>
+                <h3>5 Languages</h3>
+                <p>English, Hindi, Telugu, Tamil, French — each with matching subtitles.</p>
+            </div>
+        </section>
+    </main>
+    <footer>MathVision · Class IX Mathematics · Pythagorean Theorem</footer>
+    <script>
+        (function () {
+            const B = 'videos', L = { en: { l: 'English', v: B + '/PythagorasEnglish.mp4', s: B + '/PythagorasEnglish.srt' }, hi: { l: 'हिन्दी', v: B + '/PythagorasHindi.mp4', s: B + '/PythagorasHindi.srt' }, te: { l: 'తెలుగు', v: B + '/PythagorasTelugu.mp4', s: B + '/PythagorasTelugu.srt' }, ta: { l: 'தமிழ்', v: B + '/PythagorasTamil.mp4', s: B + '/PythagorasTamil.srt' }, fr: { l: 'Français', v: B + '/PythagorasFrench.mp4', s: B + '/PythagorasFrench.srt' }, ur: { l: 'اردو', v: B + '/PythagorasUrdu.mp4', s: B + '/PythagorasUrdu.srt' }, bn: { l: 'বাংলা', v: B + '/PythagorasBengali.mp4', s: B + '/PythagorasBengali.srt' }, es: { l: 'Español', v: B + '/PythagorasSpanish.mp4', s: B + '/PythagorasSpanish.srt' } };
+            let cur = 'en', subs = [], subOn = true, drag = false, si = 1; const SP = [1, 1.25, 1.5, 2, .5, .75];
+            const $ = s => document.querySelector(s), vid = $('#vid'), vw = $('#vw'), sub = $('#sub'), pp = $('#pp'), ipl = $('#ipl'), ipa = $('#ipa'), bp = $('#bp'), pb = $('#pb'), fill = $('#fill'), tm = $('#tm'), sp = $('#sp'), cc = $('#cc'), fs = $('#fs'), mu = $('#mu'), vol = $('#vol'), rp = $('#rp');
+            const btns = document.querySelectorAll('.lang-btn');
+            function parseSRT(t) { const c = []; t.trim().replace(/\r\n/g, '\n').split(/\n\n+/).forEach(b => { const l = b.split('\n'); if (l.length < 3) return; const m = l[1].match(/(\d{2}):(\d{2}):(\d{2}),(\d{3})\s*-->\s * (\d{ 2}):(\d{ 2 }): (\d{ 2 }), (\d{ 3 }) /);if(!m)return;c.push({start:+m[1]*3600+ +m[2]*60+ +m[3]+ +m[4]/1e3, end: +m[5] * 3600 + +m[6] * 60 + +m[7] + +m[8] / 1e3, text: l.slice(2).join(' ') })
+        }); return c}
+        async function sw(lang) { if (lang === cur && vid.src) return; const was = !vid.paused, fr = vid.duration > 0 ? vid.currentTime / vid.duration : 0; cur = lang; btns.forEach(b => b.classList.toggle('active', b.dataset.lang === lang)); vid.src = L[lang].v; vid.load(); try { const r = await fetch(L[lang].s); subs = r.ok ? parseSRT(await r.text()) : [] } catch { subs = [] } await new Promise(r => vid.addEventListener('loadedmetadata', r, { once: true })); if (fr > 0 && vid.duration) vid.currentTime = fr * vid.duration; vid.playbackRate = SP[si]; if (was) vid.play().catch(() => { }); toast('Audio: ' + L[lang].l) }
+        function tog() { vid.paused ? vid.play().catch(() => { }) : vid.pause() }
+        function upd() { const p = !vid.paused; ipl.style.display = p ? 'none' : 'block'; ipa.style.display = p ? 'block' : 'none'; bp.classList.toggle('h', p) }
+        function fmt(s) { if (!isFinite(s)) return '0:00'; const m = Math.floor(s / 60), sc = Math.floor(s % 60); return m + ':' + (sc < 10 ? '0' : '') + sc }
+        function prog() { if (!vid.duration) return; const p = vid.currentTime / vid.duration * 100; fill.style.width = p + '%'; tm.textContent = fmt(vid.currentTime) + ' / ' + fmt(vid.duration); if (!subOn || !subs.length) { sub.textContent = ''; sub.classList.remove('vis'); return } const t = vid.currentTime, c = subs.find(c => t >= c.start && t <= c.end); if (c) { sub.textContent = c.text; sub.classList.add('vis') } else { sub.textContent = ''; sub.classList.remove('vis') } }
+        let te = null; function toast(m) { if (!te) { te = document.createElement('div'); te.className = 'toast'; document.body.appendChild(te) } te.textContent = m; te.classList.add('show'); setTimeout(() => te.classList.remove('show'), 2e3) }
+        btns.forEach(b => b.addEventListener('click', () => sw(b.dataset.lang)));
+        pp.addEventListener('click', tog); bp.addEventListener('click', tog); vid.addEventListener('click', tog);
+        vid.addEventListener('play', upd); vid.addEventListener('pause', upd); vid.addEventListener('ended', upd); vid.addEventListener('timeupdate', prog);
+        pb.addEventListener('mousedown', e => { drag = true; const r = pb.getBoundingClientRect(); vid.currentTime = Math.max(0, Math.min(1, (e.clientX - r.left) / r.width)) * vid.duration });
+        document.addEventListener('mousemove', e => { if (!drag) return; const r = pb.getBoundingClientRect(); vid.currentTime = Math.max(0, Math.min(1, (e.clientX - r.left) / r.width)) * vid.duration });
+        document.addEventListener('mouseup', () => drag = false);
+        rp.addEventListener('click', () => { vid.currentTime = 0; vid.play().catch(() => { }) });
+        mu.addEventListener('click', () => { vid.muted = !vid.muted });
+        vol.addEventListener('input', () => { vid.volume = parseFloat(vol.value); vid.muted = false });
+        cc.addEventListener('click', () => { subOn = !subOn; cc.classList.toggle('on', subOn); toast(subOn ? 'Subtitles ON' : 'Subtitles OFF') });
+        sp.addEventListener('click', () => { si = (si + 1) % SP.length; vid.playbackRate = SP[si]; sp.textContent = SP[si] + '×'; toast('Speed: ' + SP[si] + '×') });
+        fs.addEventListener('click', () => { document.fullscreenElement ? document.exitFullscreen() : vw.requestFullscreen?.() });
+        let ct; vw.addEventListener('mousemove', () => { vw.classList.add('cv'); clearTimeout(ct); if (!vid.paused) ct = setTimeout(() => vw.classList.remove('cv'), 3e3) });
+        document.addEventListener('keydown', e => { const k = e.key; if (k === ' ' || k === 'k') { e.preventDefault(); tog() } else if (k === 'ArrowRight') vid.currentTime = Math.min(vid.duration, vid.currentTime + 5); else if (k === 'ArrowLeft') vid.currentTime = Math.max(0, vid.currentTime - 5); else if (k === 'm') vid.muted = !vid.muted; else if (k === 'f') (document.fullscreenElement ? document.exitFullscreen() : vw.requestFullscreen?.()); else if (k === 'c') { subOn = !subOn; cc.classList.toggle('on', subOn) } else { const i = ['1', '2', '3', '4', '5'].indexOf(k); if (i >= 0) sw(['en', 'hi', 'te', 'ta', 'fr'][i]) } });
+        sw('en');
+}) ();
+    </script>
 </body>
+
 </html>
