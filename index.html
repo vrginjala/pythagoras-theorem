@@ -427,6 +427,9 @@
                 <button class="lang-btn" data-lang="ur">اردو</button>
                 <button class="lang-btn" data-lang="bn">বাংলা</button>
                 <button class="lang-btn" data-lang="es">Español</button>
+                <button class="lang-btn" data-lang="ar">عربي</button>
+                <button class="lang-btn" data-lang="de">Deutsch</button>
+                <button class="lang-btn" data-lang="kn">ಕನ್ನಡ</button>
             </div>
             <div class="vw" id="vw">
                 <video id="vid" playsinline webkit-playsinline preload="metadata" x-webkit-airplay="allow"></video>
@@ -497,7 +500,7 @@
     <footer>MathVision · Class IX Mathematics · Pythagorean Theorem</footer>
     <script>
         (function () {
-            const B = 'videos', L = { en: { l: 'English', v: B + '/PythagorasEnglish.mp4', s: B + '/PythagorasEnglish.srt' }, hi: { l: 'हिन्दी', v: B + '/PythagorasHindi.mp4', s: B + '/PythagorasHindi.srt' }, te: { l: 'తెలుగు', v: B + '/PythagorasTelugu.mp4', s: B + '/PythagorasTelugu.srt' }, ta: { l: 'தமிழ்', v: B + '/PythagorasTamil.mp4', s: B + '/PythagorasTamil.srt' }, fr: { l: 'Français', v: B + '/PythagorasFrench.mp4', s: B + '/PythagorasFrench.srt' }, ur: { l: 'اردو', v: B + '/PythagorasUrdu.mp4', s: B + '/PythagorasUrdu.srt' }, bn: { l: 'বাংলা', v: B + '/PythagorasBengali.mp4', s: B + '/PythagorasBengali.srt' }, es: { l: 'Español', v: B + '/PythagorasSpanish.mp4', s: B + '/PythagorasSpanish.srt' } };
+            const B = 'videos', L = { en: { l: 'English', v: B + '/PythagorasEnglish.mp4', s: B + '/PythagorasEnglish.srt' }, hi: { l: 'हिन्दी', v: B + '/PythagorasHindi.mp4', s: B + '/PythagorasHindi.srt' }, te: { l: 'తెలుగు', v: B + '/PythagorasTelugu.mp4', s: B + '/PythagorasTelugu.srt' }, ta: { l: 'தமிழ்', v: B + '/PythagorasTamil.mp4', s: B + '/PythagorasTamil.srt' }, fr: { l: 'Français', v: B + '/PythagorasFrench.mp4', s: B + '/PythagorasFrench.srt' }, ur: { l: 'اردو', v: B + '/PythagorasUrdu.mp4', s: B + '/PythagorasUrdu.srt' }, bn: { l: 'বাংলা', v: B + '/PythagorasBengali.mp4', s: B + '/PythagorasBengali.srt' }, es: { l: 'Español', v: B + '/PythagorasSpanish.mp4', s: B + '/PythagorasSpanish.srt' }, ar: { l: 'عربي', v: B + '/PythagorasArabic.mp4', s: B + '/PythagorasArabic.srt' }, de: { l: 'Deutsch', v: B + '/PythagorasGerman.mp4', s: B + '/PythagorasGerman.srt' }, kn: { l: 'ಕನ್ನಡ', v: B + '/PythagorasKannada.mp4', s: B + '/PythagorasKannada.srt' } };
             let cur = 'en', subs = [], subOn = true, drag = false, si = 1; const SP = [1, 1.25, 1.5, 2, .5, .75];
             const $ = s => document.querySelector(s), vid = $('#vid'), vw = $('#vw'), sub = $('#sub'), pp = $('#pp'), ipl = $('#ipl'), ipa = $('#ipa'), bp = $('#bp'), pb = $('#pb'), fill = $('#fill'), tm = $('#tm'), sp = $('#sp'), cc = $('#cc'), fs = $('#fs'), mu = $('#mu'), vol = $('#vol'), rp = $('#rp');
             const btns = document.querySelectorAll('.lang-btn');

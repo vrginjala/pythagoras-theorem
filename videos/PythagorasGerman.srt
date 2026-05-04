@@ -1,0 +1,132 @@
+1
+00:00:00,000 --> 00:00:04,032
+Betrachten wir dieses rechtwinklige Dreieck. Es ist ein
+
+2
+00:00:04,132 --> 00:00:09,668
+Drei-vier-fünf-Dreieck, eines der bekanntesten Beispiele in der Mathematik.
+
+3
+00:00:09,800 --> 00:00:14,834
+Wir zeichnen Quadrate auf jede Seite des Dreiecks. Das blaue
+
+4
+00:00:14,934 --> 00:00:19,113
+Quadrat auf Seite a, das grüne Quadrat auf Seite b
+
+5
+00:00:19,213 --> 00:00:22,708
+und das rote Quadrat auf der Hypotenuse c.
+
+6
+00:00:23,000 --> 00:00:27,936
+Der Satz des Pythagoras besagt, dass a-Quadrat plus b-Quadrat
+
+7
+00:00:28,036 --> 00:00:32,394
+gleich c-Quadrat ist. Die Summe der Flächen der beiden
+
+8
+00:00:32,494 --> 00:00:37,348
+kleinen Quadrate ist gleich der Fläche des größten Quadrats.
+
+9
+00:00:39,600 --> 00:00:42,951
+Wir beweisen dies durch Zählen der Flächen.
+
+10
+00:00:43,051 --> 00:00:49,051
+Ein Drei-mal-drei-Quadrat hat neun Einheitszellen. Ein Vier-mal-vier-Quadrat
+
+11
+00:00:49,151 --> 00:00:53,947
+hat sechzehn Einheitszellen. Das Hypotenusenquadrat, fünf mal
+
+12
+00:00:54,047 --> 00:00:56,516
+fünf, hat fünfundzwanzig Zellen.
+
+13
+00:00:56,666 --> 00:01:00,667
+Wir verschieben die neun blauen Zellen von a-Quadrat
+
+14
+00:01:00,767 --> 00:01:04,294
+in die obere linke Ecke des c-Quadrat-Gitters.
+
+15
+00:01:04,466 --> 00:01:08,059
+Jetzt verschieben wir die sechzehn grünen Zellen
+
+16
+00:01:08,159 --> 00:01:12,214
+von b-Quadrat in den verbleibenden L-förmigen Bereich.
+
+17
+00:01:12,466 --> 00:01:17,038
+Alle fünfundzwanzig Zellen passen perfekt! Neun plus
+
+18
+00:01:17,138 --> 00:01:22,428
+sechzehn ergibt fünfundzwanzig. Dies beweist, dass a-Quadrat
+
+19
+00:01:22,528 --> 00:01:25,662
+plus b-Quadrat gleich c-Quadrat ist.
+
+20
+00:01:27,800 --> 00:01:33,745
+Beweisen wir dies nun algebraisch. Wir konstruieren ein großes Quadrat mit
+
+21
+00:01:33,845 --> 00:01:39,954
+der Seitenlänge a plus b. Darin platzieren wir vier identische rechtwinklige
+
+22
+00:01:40,054 --> 00:01:44,284
+Dreiecke mit den Seiten a und b und der Hypotenuse c.
+
+23
+00:01:44,600 --> 00:01:48,207
+Die Fläche des großen Quadrats ist a plus b im
+
+24
+00:01:48,307 --> 00:01:53,687
+Quadrat. Dies entspricht der Fläche des inneren c-Quadrats plus vier
+
+25
+00:01:53,787 --> 00:01:57,556
+Dreiecke, jedes mit der Fläche ein-halb a mal b.
+
+26
+00:01:57,666 --> 00:02:02,546
+Wenn wir die linke Seite ausmultiplizieren, erhalten wir
+
+27
+00:02:02,646 --> 00:02:07,526
+a-Quadrat plus zwei-a-b plus b-Quadrat. Die rechte Seite
+
+28
+00:02:07,626 --> 00:02:11,438
+vereinfacht sich zu c-Quadrat plus zwei-a-b.
+
+29
+00:02:11,600 --> 00:02:15,143
+Jetzt entfernen wir die vier Dreiecke. Beobachten
+
+30
+00:02:15,243 --> 00:02:18,340
+Sie, wie sie aus dem Quadrat herausgleiten.
+
+31
+00:02:18,466 --> 00:02:22,678
+Nach Subtraktion von zwei-a-b auf beiden Seiten
+
+32
+00:02:22,778 --> 00:02:27,816
+verbleibt a-Quadrat plus b-Quadrat gleich c-Quadrat. Das
+
+33
+00:02:27,916 --> 00:02:31,302
+ist der Satz des Pythagoras, bewiesen!
+

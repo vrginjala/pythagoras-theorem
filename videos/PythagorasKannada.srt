@@ -1,0 +1,108 @@
+1
+00:00:00,000 --> 00:00:05,278
+ಈ right-angled triangle ಅನ್ನು ನೋಡಿ. ಇದು three-four-five
+
+2
+00:00:05,378 --> 00:00:10,364
+triangle, mathematics ನಲ್ಲಿ ಅತ್ಯಂತ ಪ್ರಸಿದ್ಧ example.
+
+3
+00:00:10,466 --> 00:00:17,164
+ನಾವು triangle ನ ಪ್ರತಿ side ಮೇಲೆ squares draw ಮಾಡೋಣ. Side a ಮೇಲೆ
+
+4
+00:00:17,264 --> 00:00:24,502
+blue square, side b ಮೇಲೆ green square, hypotenuse c ಮೇಲೆ red square.
+
+5
+00:00:24,666 --> 00:00:33,358
+Pythagorean theorem ಪ್ರಕಾರ a-squared plus b-squared, c-squared ಗೆ equal. ಎರಡು ಚಿಕ್ಕ
+
+6
+00:00:33,458 --> 00:00:38,654
+squares ನ total area, ದೊಡ್ಡ square ನ area ಗೆ ಸಮಾನ.
+
+7
+00:00:40,800 --> 00:00:47,286
+ಈಗ areas ಎಣಿಸಿ prove ಮಾಡೋಣ. Three into three square ನಲ್ಲಿ ಒಂಬತ್ತು
+
+8
+00:00:47,386 --> 00:00:53,569
+unit cells ಇವೆ. Four into four square ನಲ್ಲಿ ಹದಿನಾರು cells ಇವೆ.
+
+9
+00:00:53,669 --> 00:00:59,852
+Hypotenuse square, five into five, ನಲ್ಲಿ ಇಪ್ಪತ್ತೈದು cells ಇವೆ.
+
+10
+00:01:00,000 --> 00:01:04,645
+ಈಗ a-squared ನ ಒಂಬತ್ತು blue cells ಅನ್ನು c-squared
+
+11
+00:01:04,745 --> 00:01:08,228
+grid ನ top-left corner ಗೆ move ಮಾಡೋಣ.
+
+12
+00:01:08,400 --> 00:01:12,049
+b-squared ನ ಹದಿನಾರು green cells ಅನ್ನು
+
+13
+00:01:12,149 --> 00:01:15,596
+ಉಳಿದ L-shaped region ಗೆ move ಮಾಡೋಣ.
+
+14
+00:01:15,866 --> 00:01:21,059
+ನೋಡಿ, ಇಪ್ಪತ್ತೈದು cells perfectly fit ಆಗಿದೆ! ಒಂಬತ್ತು
+
+15
+00:01:21,159 --> 00:01:26,145
+plus ಹದಿನಾರು equal ಇಪ್ಪತ್ತೈದು. ಇದು a-squared plus
+
+16
+00:01:26,245 --> 00:01:31,126
+b-squared equals c-squared ಎಂದು prove ಮಾಡುತ್ತದೆ.
+
+17
+00:01:33,333 --> 00:01:37,926
+ಈಗ algebra ಮೂಲಕ prove ಮಾಡೋಣ. side a plus b
+
+18
+00:01:38,026 --> 00:01:44,854
+ಇರುವ ದೊಡ್ಡ square construct ಮಾಡೋಣ. ಒಳಗೆ ನಾಲ್ಕು identical right
+
+19
+00:01:44,954 --> 00:01:50,777
+triangles place ಮಾಡೋಣ, sides a ಮತ್ತು b, hypotenuse c.
+
+20
+00:01:50,933 --> 00:01:57,599
+ದೊಡ್ಡ square ನ area, a plus b whole squared. ಇದು inner c-squared
+
+21
+00:01:57,699 --> 00:02:04,153
+area plus ನಾಲ್ಕು triangles, ಪ್ರತಿ triangle area half a into b.
+
+22
+00:02:04,266 --> 00:02:09,519
+Left side expand ಮಾಡಿದಾಗ a-squared plus two-a-b plus
+
+23
+00:02:09,619 --> 00:02:15,902
+b-squared. Right side simplify ಮಾಡಿದಾಗ c-squared plus two-a-b.
+
+24
+00:02:16,066 --> 00:02:21,012
+ನಾಲ್ಕು triangles ಅನ್ನು diagram ನಿಂದ ತೆಗೆಯುತ್ತಿದ್ದೇವೆ.
+
+25
+00:02:21,112 --> 00:02:24,630
+ಅವು square ನಿಂದ ಹೊರಗೆ slide ಆಗುತ್ತಿವೆ.
+
+26
+00:02:24,733 --> 00:02:29,959
+ಎರಡೂ ಕಡೆಯಿಂದ two-a-b subtract ಮಾಡಿದಾಗ a-squared plus
+
+27
+00:02:30,059 --> 00:02:36,105
+b-squared equals c-squared. ಅದೇ Pythagorean theorem! Proved!
+
